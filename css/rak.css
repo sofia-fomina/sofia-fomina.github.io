@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  color:#fff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  /*background-image: linear-gradient( to top,  #ff4a9c, #0c3638);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 100vh;
+  padding: 30px;
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.textcols-row {
+   display: table-row;
+}
+
+.textcols-item {
+  display: table-cell;  
+  width: 50%;
+  vertical-align: top;
+  padding: 0;
+  background: #fff2e1;
+}
+
+.textcols-row .textcols-item:first-child {
+  border-right: 30px solid #fff;
+}
+
+.textcols-row .textcols-item:last-child {
+  border-left: 30px solid #fff;
+}
+
+.bg-box {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  background-image: url("../img/planet_blue.png"), linear-gradient( to top, #ff4a9c, #0c3638);;
+  position: absolute;
+  right:0;
+  top:0;
+  height: 100%;
+  width:100%;
+  z-index: -1;
+}
+
+.container-fluid {
+  margin:auto;
+  width:100%;
+}
+
+.container {
+  margin:auto;
+  width:100%;
+  max-width: 1200px;
+}
+
+div > img {
+  display: block;
+  max-width:50%;
+  width:100%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom:.25em;
+}
+
+p {
+  max-width: 450px;
+}
+
+.dscr {
+  margin-top: 50px;
+}
+
+.dscr p {
+  max-width: 700px;
+}
+
+.star {
+  position: absolute;
+  right:0px;
+  margin-top: 30px;
+  margin-right: 0px;
+  top:10px;
+  width: 38%;
+  max-width:800px;
+  z-index:0;
+}
+
+.container >:not(.star) {
+  position: relative;
+  z-index:1;
+}
+
+.logo {
+  margin-bottom: 30px;
+  width: 250px;
+}
+
+.title {
+  width: 30%;
+  max-width: 300px;
+  min-width: 300px;
+  margin-bottom: 30px;
+}
+
+.txt-box {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+
+.txt { padding-right: 50px; }
+.txt2 {}
+
+
